@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PDF Label Extractor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Extracted Labels</h1>
+        <ul class="list-group">
+            {% for label in labels %}
+            <li class="list-group-item">
+                <a href="{{ url_for('download_file', filename=label) }}" class="btn btn-success">Download Label {{ loop.index }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('download_all') }}" class="btn btn-primary mt-4">Download All Labels</a>
+        <a href="/" class="btn btn-secondary mt-4">Upload Another PDF</a>
+    </div>
+</body>
+</html>
