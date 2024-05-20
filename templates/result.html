@@ -31,6 +31,14 @@
             background-color: #0056b3;
             border-color: #004085;
         }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
     </style>
 </head>
 <body>
@@ -47,8 +55,25 @@
             </ul>
             <div class="text-center mt-4">
                 <a href="/download_all" class="btn btn-primary">Download All Labels as ZIP</a>
+                <a href="/print_all_labels" class="btn btn-primary">Print All Labels</a>
+                <button class="btn btn-primary" onclick="copyLabels()">Copy All Labels</button>
+                <a href="/" class="btn btn-secondary">Back</a>
             </div>
         </div>
     </div>
+    <script>
+        function copyLabels() {
+            fetch('/extract_labels')
+                .then(response => response.json())
+                .then(data => {
+                    const textToCopy = data.join(', ');
+                    navigator.clipboard.writeText(textToCopy).then(function() {
+                        alert('Labels copied to clipboard!');
+                    }, function(err) {
+                        console.error('Could not copy text: ', err);
+                    });
+                });
+        }
+    </script>
 </body>
 </html>
