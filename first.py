@@ -1,6 +1,6 @@
+import os
 from flask import Flask, request, send_file, render_template
 import fitz
-import os
 import zipfile
 
 app = Flask(__name__)
@@ -124,4 +124,5 @@ def download_all():
     return send_file(zip_filename, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
