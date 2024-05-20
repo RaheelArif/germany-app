@@ -2,17 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
 </head>
 <body>
-    <h1>Extracted Labels</h1>
-    <ul>
-        {% for label in labels %}
-            <li><a href="/download/{{ label }}">{{ label }}</a></li>
-        {% endfor %}
-    </ul>
-    <a href="/download_all">Download All Labels</a>
-    <br>
-    <a href="/print_labels">Print All Labels</a>
+    <div class="container">
+        <div class="card">
+            <h2 class="text-center">Generated Labels</h2>
+            <ul class="list-group">
+                {% for label in labels %}
+                <li class="list-group-item">
+                    <span>{{ label }}</span>
+                    <a href="/download/{{ label }}" class="btn btn-primary btn-sm">Download</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="text-center mt-4">
+                <a href="/download_all" class="btn btn-primary">Download All Labels as ZIP</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
