@@ -5,9 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload PDF</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-group input[type="file"] {
+            background-color: #f0f4ff;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 10px;
+            color: #000000;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            white-space: nowrap; /* Ensure the heading stays on one line */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.5rem; /* Adjust the font size if necessary */
+            font-weight: 600; /* Use a bolder weight for the heading */
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
+        <div class="logo-container">
+            <a href="/">
+                <img src="{{ url_for('static', filename='images/png.avif') }}" alt="Rivanoo Logo" class="logo">
+            </a>
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h1 class="text-center">Upload PDF to Extract Labels</h1>
