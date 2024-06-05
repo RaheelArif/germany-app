@@ -58,8 +58,13 @@ def extract_labels(pdf_document, margins, label_size, rows, cols):
             label_rect = fitz.Rect(0, 0, label_size[0], label_size[1])
             new_page = label_page.new_page(width=label_size[0], height=label_size[1])
             new_page.show_pdf_page(label_rect, pdf_document, page.number, clip=rect)
-            label_pdfs.append(label_page)
-            logging.debug(f"Extracted label {idx + 1} from page {page_num + 1}")
+
+            # Check if the label page contains any non-white content
+            if new_page.get_text().strip():  # Simple text check; refine as needed
+                label_pdfs.append(label_page)
+                logging.debug(f"Extracted label {idx + 1} from page {page_num + 1}")
+            else:
+                label_page.close()  # Close empty label page to free resources
 
     return label_pdfs
 
@@ -83,17 +88,11 @@ def extract_text_from_labels(pdf_document, margins, label_size, rows, cols):
         
         for idx, (x0, y0, x1, y1) in enumerate(label_coords):
             rect = fitz.Rect(x0, y0, x1, y1)
-            text = page.get_text("text", clip=rect)
-            label_id = f"Page {page_num + 1} Label {idx + 1}"
-            # Ensure proper encoding and handle special characters
-            if text:
-                try:
-                    text = text.encode('utf-8', errors='replace').decode('utf-8')
-                except UnicodeEncodeError as e:
-                    logging.error(f"Encoding error on {label_id}: {e}")
-                    text = ''
-            extracted_texts.append(f"{label_id}:\n{text.strip()}\n")
-            logging.debug(f"Extracted text from {label_id}")
+            text = page.get_text("text", clip=rect).strip()
+            if text:  # Check if the extracted text is not empty
+                label_id = f"Page {page_num + 1} Label {idx + 1}"
+                extracted_texts.append(f"{label_id}:\n{text}\n")
+                logging.debug(f"Extracted text from {label_id}")
     
     return extracted_texts
 
