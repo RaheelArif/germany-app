@@ -1,145 +1,157 @@
-import os
-from flask import Flask, request, send_file, render_template
+from flask import Flask, render_template, request, send_file, redirect, url_for
 import fitz
-import zipfile
+import os
+import logging
+import uuid
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-app.config['LABEL_FOLDER'] = 'labels'
 
-if not os.path.exists(app.config['UPLOAD_FOLDER']):
-    os.makedirs(app.config['UPLOAD_FOLDER'])
+# Configure logging
+logging.basicConfig(filename='extract_labels.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-if not os.path.exists(app.config['LABEL_FOLDER']):
-    os.makedirs(app.config['LABEL_FOLDER'])
+def load_pdf(input_path):
+    logging.info(f"Loading PDF {input_path}")
+    return fitz.open(input_path)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+def save_pdf(pdf_document, output_path):
+    logging.info(f"Saving PDF to {output_path}")
+    pdf_document.save(output_path)
+    pdf_document.close()
 
-@app.route('/upload', methods=['POST'])
-def upload_file():
-    if 'files[]' not in request.files:
-        return "No file part"
-    
-    files = request.files.getlist('files[]')
-    if len(files) == 0:
-        return "No selected files"
-
-    labels = []
-    for file in files:
-        if file and file.filename:
-            filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-            file.save(filepath)
-            labels.extend(process_pdf(filepath))
-    
-    return render_template('result.html', labels=labels)
-
-def process_pdf(filepath):
-    print(f"Processing PDF: {filepath}")
-    pdf_document = fitz.open(filepath)
-
-    top_crop = 1.1467 * 72  # 1.2 inches
-    bottom_crop = 1.295 * 72  # 1.2 inches
-    left_crop = 0.464 * 72  # 0.5 inches
-    right_crop = 0.724 * 72  # 0.5 inches
-
+def crop_pages(pdf_document, margins):
+    left_crop, top_crop, right_crop, bottom_crop = margins
     for page_num in range(len(pdf_document)):
         page = pdf_document.load_page(page_num)
         rect = page.rect
         new_rect = fitz.Rect(rect.x0 + left_crop, rect.y0 + top_crop, rect.x1 - right_crop, rect.y1 - bottom_crop)
         page.set_cropbox(new_rect)
+        logging.debug(f"Page {page_num + 1} cropped with margins {margins}")
+    return pdf_document
 
-    cropped_pdf_path = os.path.join(app.config['UPLOAD_FOLDER'], 'cropped_' + os.path.basename(filepath))
-    pdf_document.save(cropped_pdf_path)
-    print(f"Cropped PDF saved as: {cropped_pdf_path}")
-
-    cropped_pdf = fitz.open(cropped_pdf_path)
-    label_width = 3.5 * 72  # 3.5 inches in points
-    label_height = 1.9 * 72  # 1.9 inches in points
-
+def define_label_coordinates(label_size, rows, cols, new_rect):
+    label_width, label_height = label_size
     label_coords = []
-    for row in range(5):
-        for col in range(2):
-            if len(label_coords) >= 10:
-                break
-            x0 = col * label_width
-            y0 = row * label_height
+    for row in range(rows):
+        for col in range(cols):
+            x0 = new_rect.x0 + col * label_width
+            y0 = new_rect.y0 + row * label_height
             x1 = x0 + label_width
             y1 = y0 + label_height
             label_coords.append((x0, y0, x1, y1))
+    logging.debug(f"Label coordinates defined with size {label_size} for {rows} rows and {cols} columns")
+    return label_coords
 
-    output_files = []
+def extract_labels(pdf_document, margins, label_size, rows, cols):
+    cropped_pdf = crop_pages(pdf_document, margins)
+    label_pdfs = []
+
     for page_num in range(len(cropped_pdf)):
+        page = cropped_pdf.load_page(page_num)
+        new_rect = page.rect
+        
+        label_coords = define_label_coordinates(label_size, rows, cols, new_rect)
+        
         for idx, (x0, y0, x1, y1) in enumerate(label_coords):
-            try:
-                rect = fitz.Rect(x0, y0, x1, y1)
-                page = cropped_pdf.load_page(page_num)
-                text_content = page.get_text("text", clip=rect).strip()
-                if len(text_content) == 0:
-                    print(f"No content found in region for Label {idx + 1} on page {page_num + 1}, stopping extraction.")
-                    break
+            rect = fitz.Rect(x0, y0, x1, y1)
+            label_page = fitz.open()  # Create a new PDF document
+            label_rect = fitz.Rect(0, 0, label_size[0], label_size[1])
+            new_page = label_page.new_page(width=label_size[0], height=label_size[1])
+            new_page.show_pdf_page(label_rect, pdf_document, page.number, clip=rect)
+            label_pdfs.append(label_page)
+            logging.debug(f"Extracted label {idx + 1} from page {page_num + 1}")
 
-                new_pdf = fitz.open()
-                new_page = new_pdf.new_page(width=rect.width, height=rect.height)
-                new_page.show_pdf_page(new_page.rect, cropped_pdf, page_num, clip=rect)
+    return label_pdfs
 
-                output_pdf_path = os.path.join(app.config['LABEL_FOLDER'], f"label_{page_num + 1}_{idx + 1}.pdf")
-                new_pdf.save(output_pdf_path)
-                new_pdf.close()
-                output_files.append(f"label_{page_num + 1}_{idx + 1}.pdf")
-                print(f"Label {idx + 1} on page {page_num + 1} saved as {output_pdf_path}")
-            except Exception as e:
-                print(f"Failed to process label {idx + 1} on page {page_num + 1}: {e}")
+def compile_labels(label_pdfs, output_path):
+    output_pdf = fitz.open()
+    for label_pdf in label_pdfs:
+        label_page = label_pdf.load_page(0)
+        output_pdf.insert_pdf(label_pdf)
+        label_pdf.close()
+    save_pdf(output_pdf, output_path)
 
-    print(f"Output files: {output_files}")
-    return output_files
+def extract_text_from_labels(pdf_document, margins, label_size, rows, cols):
+    extracted_texts = []
+    cropped_pdf = crop_pages(pdf_document, margins)
+    
+    for page_num in range(len(cropped_pdf)):
+        page = cropped_pdf.load_page(page_num)
+        new_rect = page.rect
+        
+        label_coords = define_label_coordinates(label_size, rows, cols, new_rect)
+        
+        for idx, (x0, y0, x1, y1) in enumerate(label_coords):
+            rect = fitz.Rect(x0, y0, x1, y1)
+            text = page.get_text("text", clip=rect)
+            label_id = f"Page {page_num + 1} Label {idx + 1}"
+            # Ensure proper encoding and handle special characters
+            if text:
+                try:
+                    text = text.encode('utf-8', errors='replace').decode('utf-8')
+                except UnicodeEncodeError as e:
+                    logging.error(f"Encoding error on {label_id}: {e}")
+                    text = ''
+            extracted_texts.append(f"{label_id}:\n{text.strip()}\n")
+            logging.debug(f"Extracted text from {label_id}")
+    
+    return extracted_texts
 
-@app.route('/download/<filename>')
+def save_extracted_texts(extracted_texts, output_path):
+    with open(output_path, 'w', encoding='utf-8') as f:
+        for text in extracted_texts:
+            f.write(text + '\n')
+    logging.info(f"Extracted texts saved to {output_path}")
+
+@app.route('/')
+def upload_pdf():
+    return render_template('upload.html')
+
+@app.route('/upload', methods=['POST'])
+def upload_file():
+    if 'file' not in request.files:
+        return redirect(request.url)
+    
+    file = request.files['file']
+    if file.filename == '':
+        return redirect(request.url)
+    
+    if file:
+        filename = str(uuid.uuid4()) + ".pdf"
+        input_path = os.path.join("uploads", filename)
+        file.save(input_path)
+        
+        # Process the PDF
+        margins = (33.41, 82.56, 52.13, 93.24)  # Left, Top, Right, Bottom in points
+        label_size = (255, 133.1)  # Width and height in points
+        rows, cols = 5, 2
+
+        pdf_document = load_pdf(input_path)
+        label_pdfs = extract_labels(pdf_document, margins, label_size, rows, cols)
+
+        output_pdf_path = os.path.join("downloads", f"labels_{filename}")
+        compile_labels(label_pdfs, output_pdf_path)
+
+        extracted_texts = extract_text_from_labels(pdf_document, margins, label_size, rows, cols)
+        output_text_path = os.path.join("downloads", f"text_{filename.replace('.pdf', '.txt')}")
+        save_extracted_texts(extracted_texts, output_text_path)
+
+        # Cleanup the original upload
+        pdf_document.close()  # Ensure the PDF is closed before removing
+        os.remove(input_path)
+
+        return redirect(url_for('results', labels_pdf=output_pdf_path, text_file=output_text_path, label_count=len(label_pdfs)))
+
+@app.route('/results')
+def results():
+    labels_pdf = request.args.get('labels_pdf')
+    text_file = request.args.get('text_file')
+    label_count = request.args.get('label_count')
+    return render_template('results.html', labels_pdf=labels_pdf, text_file=text_file, label_count=label_count)
+
+@app.route('/download/<path:filename>', methods=['GET'])
 def download_file(filename):
-    file_path = os.path.join(app.config['LABEL_FOLDER'], filename)
-    if os.path.exists(file_path):
-        return send_file(file_path, as_attachment=True)
-    else:
-        return "File not found", 404
-
-@app.route('/download_all')
-def download_all():
-    zip_filename = os.path.join(app.config['LABEL_FOLDER'], 'labels.zip')
-    with zipfile.ZipFile(zip_filename, 'w') as zipf:
-        for root, _, files in os.walk(app.config['LABEL_FOLDER']):
-            for file in files:
-                if file.endswith('.pdf'):
-                    zipf.write(os.path.join(root, file), file)
-    return send_file(zip_filename, as_attachment=True)
-
-@app.route('/print_labels')
-def print_labels():
-    from reportlab.lib.pagesizes import letter
-    from reportlab.pdfgen import canvas
-
-    label_width = 3.5 * 72  # 3.5 inches in points
-    label_height = 1.9 * 72  # 1.9 inches in points
-
-    print_pdf_path = os.path.join(app.config['LABEL_FOLDER'], 'print_labels.pdf')
-    c = canvas.Canvas(print_pdf_path, pagesize=letter)
-    width, height = letter
-
-    y_position = height - 40  # start from top, margin 40
-    label_margin = 10  # margin between labels
-
-    for root, _, files in os.walk(app.config['LABEL_FOLDER']):
-        for file in sorted(files):
-            if file.endswith('.pdf'):
-                label_path = os.path.join(root, file)
-                c.drawImage(label_path, 40, y_position - 100, width=label_width, height=label_height)
-                y_position -= (label_height + label_margin)
-                if y_position < label_height + 40:  # check if need new page
-                    c.showPage()
-                    y_position = height - 40
-
-    c.save()
-    return send_file(print_pdf_path, as_attachment=True)
+    return send_file(filename, as_attachment=True)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
