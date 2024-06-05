@@ -121,6 +121,10 @@ def upload_file():
         input_path = os.path.join("uploads", filename)
         file.save(input_path)
         
+        # Ensure the downloads directory exists
+        if not os.path.exists('downloads'):
+            os.makedirs('downloads')
+        
         # Process the PDF
         margins = (33.41, 82.56, 52.13, 93.24)  # Left, Top, Right, Bottom in points
         label_size = (255, 133.1)  # Width and height in points
@@ -142,6 +146,7 @@ def upload_file():
 
         return redirect(url_for('results', labels_pdf=output_pdf_path, text_file=output_text_path, label_count=len(label_pdfs)))
 
+
 @app.route('/results')
 def results():
     labels_pdf = request.args.get('labels_pdf')
@@ -154,5 +159,9 @@ def download_file(filename):
     return send_file(filename, as_attachment=True)
 
 if __name__ == '__main__':
+    if not os.path.exists('uploads'):
+        os.makedirs('uploads')
+    if not os.path.exists('downloads'):
+        os.makedirs('downloads')
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
