@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivanoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .box {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px;
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Rivanoo Logo" id="logo" class="mb-4" style="max-width: 200px;">
+            <form action="/upload_logo" method="post" enctype="multipart/form-data" class="mb-4">
+                <div class="form-group">
+                    <input type="file" name="logo" class="form-control-file" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Logo</button>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3 box" onclick="window.location.href='/menu/sweden'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg" alt="Sweden Flag">
+                <h2>Sweden</h2>
+            </div>
+            <div class="col-md-3 box" onclick="window.location.href='/menu/sweden_with_flags'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg" alt="Sweden Flag">
+                <h2>Sweden with Flags</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

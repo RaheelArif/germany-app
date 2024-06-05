@@ -1,10 +1,5 @@
-from flask import Flask, render_template, request, send_file, redirect, url_for
 import fitz
-import os
 import logging
-import uuid
-
-app = Flask(__name__)
 
 # Configure logging
 logging.basicConfig(filename='extract_labels.log', level=logging.DEBUG,
@@ -101,66 +96,3 @@ def save_extracted_texts(extracted_texts, output_path):
         for text in extracted_texts:
             f.write(text + '\n')
     logging.info(f"Extracted texts saved to {output_path}")
-
-@app.route('/')
-def upload_pdf():
-    return render_template('upload.html')
-
-@app.route('/upload', methods=['POST'])
-def upload_file():
-    if 'file' not in request.files:
-        return redirect(request.url)
-    
-    file = request.files['file']
-    if file.filename == '':
-        return redirect(request.url)
-    
-    if file:
-        filename = str(uuid.uuid4()) + ".pdf"
-        input_path = os.path.join("uploads", filename)
-        file.save(input_path)
-        
-        # Ensure the downloads directory exists
-        if not os.path.exists('downloads'):
-            os.makedirs('downloads')
-        
-        # Process the PDF
-        margins = (33.41, 82.56, 52.13, 93.24)  # Left, Top, Right, Bottom in points
-        label_size = (255, 133.1)  # Width and height in points
-        rows, cols = 5, 2
-
-        pdf_document = load_pdf(input_path)
-        label_pdfs = extract_labels(pdf_document, margins, label_size, rows, cols)
-
-        output_pdf_path = os.path.join("downloads", f"labels_{filename}")
-        compile_labels(label_pdfs, output_pdf_path)
-
-        extracted_texts = extract_text_from_labels(pdf_document, margins, label_size, rows, cols)
-        output_text_path = os.path.join("downloads", f"text_{filename.replace('.pdf', '.txt')}")
-        save_extracted_texts(extracted_texts, output_text_path)
-
-        # Cleanup the original upload
-        pdf_document.close()  # Ensure the PDF is closed before removing
-        os.remove(input_path)
-
-        return redirect(url_for('results', labels_pdf=output_pdf_path, text_file=output_text_path, label_count=len(label_pdfs)))
-
-
-@app.route('/results')
-def results():
-    labels_pdf = request.args.get('labels_pdf')
-    text_file = request.args.get('text_file')
-    label_count = request.args.get('label_count')
-    return render_template('results.html', labels_pdf=labels_pdf, text_file=text_file, label_count=label_count)
-
-@app.route('/download/<path:filename>', methods=['GET'])
-def download_file(filename):
-    return send_file(filename, as_attachment=True)
-
-if __name__ == '__main__':
-    if not os.path.exists('uploads'):
-        os.makedirs('uploads')
-    if not os.path.exists('downloads'):
-        os.makedirs('downloads')
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
