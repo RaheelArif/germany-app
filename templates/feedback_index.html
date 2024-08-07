@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload File - Rivanoo</title>
+    <title>Upload Comments File - Rivanoo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
@@ -75,15 +75,14 @@
             <a href="{{ url_for('main.home') }}">
                 <img src="{{ url_for('static', filename='images/png.avif') }}" alt="Rivanoo Logo" class="logo">
             </a>
-            <h1 class="title">Upload {{ menu_type.title() }} File</h1>
+            <h1 class="title">Upload Comments File</h1>
         </div>
         <div class="row mt-5">
             <div class="col-md-6 box mx-auto">
-                <form action="{{ url_for('main.upload_file') }}" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="menu_type" value="{{ menu_type }}">
+                <form action="{{ url_for('feedback.upload_file') }}" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="file">Choose {{ 'PDF' if menu_type == 'germany' else 'Excel' }} file:</label>
-                        <input type="file" class="form-control-file" id="file" name="file" accept="{{ '.pdf' if menu_type == 'germany' else '.xlsx' }}" required>
+                        <label for="file">Choose Excel file:</label>
+                        <input type="file" class="form-control-file" id="file" name="file" accept=".xlsx" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Upload</button>
                 </form>

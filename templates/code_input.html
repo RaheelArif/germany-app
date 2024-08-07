@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Code - Rivanoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+        .box {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            background-color: #f0f4ff;
+            color: #007bff;
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .logo-title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .title {
+            text-align: center;
+            width: 100%;
+            font-size: 2.5rem;
+            color: #000;
+            font-weight: 600;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .row {
+            justify-content: center;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #007bff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        .form-group label {
+            color: #007bff;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(-10px); }
+            20% { transform: translateX(10px); }
+            30% { transform: translateX(-10px); }
+            40% { transform: translateX(10px); }
+            50% { transform: translateX(-10px); }
+            60% { transform: translateX(10px); }
+            70% { transform: translateX(-10px); }
+            80% { transform: translateX(10px); }
+            90% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="logo-title-container">
+            <a href="{{ url_for('main.home') }}">
+                <img src="{{ url_for('static', filename='images/png.avif') }}" alt="Rivanoo Logo" class="logo">
+            </a>
+            <h1 class="title">Enter Code</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 box">
+                <form action="{{ url_for('main.verify_code') }}" method="post">
+                    <div class="form-group">
+                        <label for="code">Code:</label>
+                        <input type="text" class="form-control" id="code" name="code" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <div class="error-message">
+                            {% for message in messages %}
+                                <p>{{ message }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                const errorMessage = document.querySelector('.error-message p');
+                if (errorMessage) {
+                    const box = document.querySelector('.box');
+                    box.classList.remove('shake');
+                    void box.offsetWidth;  // Trigger reflow to restart the animation
+                    box.classList.add('shake');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
