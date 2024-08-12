@@ -324,3 +324,443 @@
 2024-08-09 19:27:51,301 - INFO - 127.0.0.1 - - [09/Aug/2024 19:27:51] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
 2024-08-09 19:36:25,523 - INFO - 127.0.0.1 - - [09/Aug/2024 19:36:25] "GET /menu/sweden HTTP/1.1" 200 -
 2024-08-09 19:36:25,535 - INFO - 127.0.0.1 - - [09/Aug/2024 19:36:25] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:09,223 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:09] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:09,233 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:09] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:09,679 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:09] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:09,689 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:09] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:10,222 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:10,233 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:10,392 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:10,402 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:10,563 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:10,572 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:10,737 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:10,748 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:10,907 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:10,916 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:10] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:40:11,096 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:11] "GET / HTTP/1.1" 200 -
+2024-08-09 19:40:11,105 - INFO - 127.0.0.1 - - [09/Aug/2024 19:40:11] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:03,694 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.13:5001
+2024-08-09 19:41:03,694 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-09 19:41:03,695 - INFO -  * Restarting with stat
+2024-08-09 19:41:04,163 - WARNING -  * Debugger is active!
+2024-08-09 19:41:04,171 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 19:41:05,198 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:05] "GET / HTTP/1.1" 200 -
+2024-08-09 19:41:05,215 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:05] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:06,592 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:06] "GET / HTTP/1.1" 200 -
+2024-08-09 19:41:06,602 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:06] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:08,327 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:08] "GET / HTTP/1.1" 200 -
+2024-08-09 19:41:08,338 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:08] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:19,822 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:19] "GET /menu/sweden HTTP/1.1" 200 -
+2024-08-09 19:41:19,843 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:19] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:37,807 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "[32mPOST /verify_code HTTP/1.1[0m" 302 -
+2024-08-09 19:41:37,813 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "GET /menu_options HTTP/1.1" 200 -
+2024-08-09 19:41:37,824 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:37,824 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "GET /static/images/icon_comments.png HTTP/1.1" 200 -
+2024-08-09 19:41:37,830 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "GET /static/images/icon_stock.png HTTP/1.1" 200 -
+2024-08-09 19:41:37,835 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:37] "GET /static/images/icon_message.png HTTP/1.1" 200 -
+2024-08-09 19:41:39,731 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:39] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 19:41:39,744 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:39] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 19:41:49,014 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:49] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-09 19:41:49,017 - INFO - 127.0.0.1 - - [09/Aug/2024 19:41:49] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+2024-08-09 20:03:41,003 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/comment_feedback.py', reloading
+2024-08-09 20:03:41,111 - INFO -  * Restarting with stat
+2024-08-09 20:03:42,042 - WARNING -  * Debugger is active!
+2024-08-09 20:03:42,052 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:06:20,019 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/comment_feedback.py', reloading
+2024-08-09 20:06:20,131 - INFO -  * Restarting with stat
+2024-08-09 20:06:20,706 - WARNING -  * Debugger is active!
+2024-08-09 20:06:20,715 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:06:55,937 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/__init__.py', reloading
+2024-08-09 20:06:56,053 - INFO -  * Restarting with stat
+2024-08-09 20:06:56,590 - WARNING -  * Debugger is active!
+2024-08-09 20:06:56,599 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:11:09,455 - INFO - 127.0.0.1 - - [09/Aug/2024 20:11:09] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:11:09,473 - INFO - 127.0.0.1 - - [09/Aug/2024 20:11:09] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:13:04,090 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/__init__.py', reloading
+2024-08-09 20:13:04,241 - INFO -  * Restarting with stat
+2024-08-09 20:13:04,793 - WARNING -  * Debugger is active!
+2024-08-09 20:13:04,803 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:13:15,474 - INFO - 127.0.0.1 - - [09/Aug/2024 20:13:15] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:13:15,490 - INFO - 127.0.0.1 - - [09/Aug/2024 20:13:15] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:13:37,882 - INFO - 127.0.0.1 - - [09/Aug/2024 20:13:37] "GET /menu/germany HTTP/1.1" 200 -
+2024-08-09 20:13:37,893 - INFO - 127.0.0.1 - - [09/Aug/2024 20:13:37] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:14:26,658 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:26] "GET /menu/sweden HTTP/1.1" 200 -
+2024-08-09 20:14:26,670 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:26] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:14:29,742 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "[32mPOST /verify_code HTTP/1.1[0m" 302 -
+2024-08-09 20:14:29,748 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "GET /menu_options HTTP/1.1" 200 -
+2024-08-09 20:14:29,760 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:14:29,760 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "[36mGET /static/images/icon_comments.png HTTP/1.1[0m" 304 -
+2024-08-09 20:14:29,763 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "[36mGET /static/images/icon_stock.png HTTP/1.1[0m" 304 -
+2024-08-09 20:14:29,763 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:29] "[36mGET /static/images/icon_message.png HTTP/1.1[0m" 304 -
+2024-08-09 20:14:30,685 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:30] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:14:30,697 - INFO - 127.0.0.1 - - [09/Aug/2024 20:14:30] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-09 20:18:19,841 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-09 20:18:19,944 - INFO -  * Restarting with stat
+2024-08-09 20:18:20,827 - WARNING -  * Debugger is active!
+2024-08-09 20:18:20,836 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:19:02,056 - INFO - 127.0.0.1 - - [09/Aug/2024 20:19:02] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:19:43,230 - INFO - 127.0.0.1 - - [09/Aug/2024 20:19:43] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:19:49,378 - INFO - 127.0.0.1 - - [09/Aug/2024 20:19:49] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-09 20:19:49,382 - INFO - 127.0.0.1 - - [09/Aug/2024 20:19:49] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+2024-08-09 20:20:44,767 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-09 20:20:44,903 - INFO -  * Restarting with stat
+2024-08-09 20:20:45,790 - WARNING -  * Debugger is active!
+2024-08-09 20:20:45,799 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:20:48,494 - INFO - 127.0.0.1 - - [09/Aug/2024 20:20:48] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:20:53,702 - INFO - 127.0.0.1 - - [09/Aug/2024 20:20:53] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-09 20:20:53,706 - INFO - 127.0.0.1 - - [09/Aug/2024 20:20:53] "[31m[1mGET /upload HTTP/1.1[0m" 405 -
+2024-08-09 20:21:00,221 - INFO - 127.0.0.1 - - [09/Aug/2024 20:21:00] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:21:11,060 - INFO - 127.0.0.1 - - [09/Aug/2024 20:21:11] "GET /check_bad_comments HTTP/1.1" 200 -
+2024-08-09 20:21:17,969 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-09 20:21:18,109 - INFO -  * Restarting with stat
+2024-08-09 20:21:19,025 - WARNING -  * Debugger is active!
+2024-08-09 20:21:19,037 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:26:26,023 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app.py', reloading
+2024-08-09 20:26:26,134 - INFO -  * Restarting with stat
+2024-08-09 20:26:27,046 - WARNING -  * Debugger is active!
+2024-08-09 20:26:27,055 - INFO -  * Debugger PIN: 494-748-069
+2024-08-09 20:26:30,087 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app.py', reloading
+2024-08-09 20:26:30,221 - INFO -  * Restarting with stat
+2024-08-09 20:26:30,769 - WARNING -  * Debugger is active!
+2024-08-09 20:26:30,777 - INFO -  * Debugger PIN: 494-748-069
+2024-08-10 03:21:54,969 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.13:5001
+2024-08-10 03:21:54,970 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-10 03:21:54,971 - INFO -  * Restarting with stat
+2024-08-10 03:21:55,482 - WARNING -  * Debugger is active!
+2024-08-10 03:21:55,493 - INFO -  * Debugger PIN: 494-748-069
+2024-08-10 03:22:03,749 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:03] "GET / HTTP/1.1" 200 -
+2024-08-10 03:22:03,776 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:03] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-10 03:22:04,959 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:04] "GET /menu/germany HTTP/1.1" 200 -
+2024-08-10 03:22:04,971 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:04] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-10 03:22:37,422 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:37] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-10 03:22:37,425 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/c99fa81d-e93f-4b80-8699-39cf8320858a.pdf
+2024-08-10 03:22:37,451 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-10 03:22:37,452 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-10 03:22:37,481 - DEBUG - Extracted label 1 from page 1
+2024-08-10 03:22:37,490 - DEBUG - Extracted label 2 from page 1
+2024-08-10 03:22:37,499 - DEBUG - Extracted label 3 from page 1
+2024-08-10 03:22:37,508 - DEBUG - Extracted label 4 from page 1
+2024-08-10 03:22:37,516 - DEBUG - Extracted label 5 from page 1
+2024-08-10 03:22:37,525 - DEBUG - Extracted label 6 from page 1
+2024-08-10 03:22:37,533 - DEBUG - Extracted label 7 from page 1
+2024-08-10 03:22:37,542 - DEBUG - Extracted label 8 from page 1
+2024-08-10 03:22:37,550 - DEBUG - Extracted label 9 from page 1
+2024-08-10 03:22:37,564 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_c99fa81d-e93f-4b80-8699-39cf8320858a.pdf
+2024-08-10 03:22:37,569 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-10 03:22:37,569 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-10 03:22:37,574 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-10 03:22:37,578 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-10 03:22:37,581 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-10 03:22:37,584 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-10 03:22:37,587 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-10 03:22:37,590 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-10 03:22:37,593 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-10 03:22:37,596 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-10 03:22:37,599 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-10 03:22:37,602 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_c99fa81d-e93f-4b80-8699-39cf8320858a.txt
+2024-08-10 03:22:37,602 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:37] "[32mGET /process_file/c99fa81d-e93f-4b80-8699-39cf8320858a.pdf HTTP/1.1[0m" 302 -
+2024-08-10 03:22:37,607 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:37] "GET /results?labels_pdf=labels_c99fa81d-e93f-4b80-8699-39cf8320858a.pdf&text_file=text_c99fa81d-e93f-4b80-8699-39cf8320858a.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-10 03:22:37,621 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:37] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-10 03:22:40,984 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:40] "GET /download/labels_c99fa81d-e93f-4b80-8699-39cf8320858a.pdf HTTP/1.1" 200 -
+2024-08-10 03:22:57,507 - INFO - 127.0.0.1 - - [10/Aug/2024 03:22:57] "GET /download/text_c99fa81d-e93f-4b80-8699-39cf8320858a.txt HTTP/1.1" 200 -
+2024-08-10 21:25:46,901 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.13:5001
+2024-08-10 21:25:46,901 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-10 21:25:46,902 - INFO -  * Restarting with stat
+2024-08-10 21:25:47,422 - WARNING -  * Debugger is active!
+2024-08-10 21:25:47,434 - INFO -  * Debugger PIN: 494-748-069
+2024-08-10 21:26:04,859 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:04] "GET / HTTP/1.1" 200 -
+2024-08-10 21:26:04,905 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:04] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-10 21:26:06,624 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:06] "GET /menu/germany HTTP/1.1" 200 -
+2024-08-10 21:26:06,639 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:06] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-10 21:26:11,459 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-10 21:26:11,462 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf
+2024-08-10 21:26:11,482 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "[35m[1mGET /process_file/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf HTTP/1.1[0m" 500 -
+2024-08-10 21:26:11,501 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "GET /process_file/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-08-10 21:26:11,503 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "GET /process_file/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-08-10 21:26:11,525 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "GET /process_file/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-08-10 21:26:11,545 - INFO - 127.0.0.1 - - [10/Aug/2024 21:26:11] "[36mGET /process_file/daaa3a34-7e1f-41da-b3dc-91f8214e3146.pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-08-11 02:11:02,499 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.13:5001
+2024-08-11 02:11:02,500 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-11 02:11:02,501 - INFO -  * Restarting with stat
+2024-08-11 02:11:02,992 - WARNING -  * Debugger is active!
+2024-08-11 02:11:02,999 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:11:21,580 - INFO - 127.0.0.1 - - [11/Aug/2024 02:11:21] "GET / HTTP/1.1" 200 -
+2024-08-11 02:11:21,611 - INFO - 127.0.0.1 - - [11/Aug/2024 02:11:21] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-11 02:13:32,427 - INFO - 127.0.0.1 - - [11/Aug/2024 02:13:32] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:16:36,064 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app.py', reloading
+2024-08-11 02:16:36,198 - INFO -  * Restarting with stat
+2024-08-11 02:16:37,050 - WARNING -  * Debugger is active!
+2024-08-11 02:16:37,059 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:17:27,377 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app.py', reloading
+2024-08-11 02:17:27,485 - INFO -  * Restarting with stat
+2024-08-11 02:17:28,027 - WARNING -  * Debugger is active!
+2024-08-11 02:17:28,036 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:17:49,365 - INFO - 127.0.0.1 - - [11/Aug/2024 02:17:49] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:17:49,368 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/2565b809-b217-443f-91ba-d72ce369e698.pdf
+2024-08-11 02:17:49,396 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:17:49,397 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:17:49,433 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:17:49,442 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:17:49,450 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:17:49,458 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:17:49,465 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:17:49,472 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:17:49,479 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:17:49,486 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:17:49,494 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:17:49,504 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_2565b809-b217-443f-91ba-d72ce369e698.pdf
+2024-08-11 02:17:49,509 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:17:49,509 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:17:49,514 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:17:49,516 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:17:49,519 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:17:49,522 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:17:49,524 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:17:49,526 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:17:49,529 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:17:49,532 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:17:49,534 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:17:49,536 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_2565b809-b217-443f-91ba-d72ce369e698.txt
+2024-08-11 02:17:49,537 - INFO - 127.0.0.1 - - [11/Aug/2024 02:17:49] "[32mGET /process_file/2565b809-b217-443f-91ba-d72ce369e698.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:17:49,543 - INFO - 127.0.0.1 - - [11/Aug/2024 02:17:49] "GET /results?labels_pdf=labels_2565b809-b217-443f-91ba-d72ce369e698.pdf&text_file=text_2565b809-b217-443f-91ba-d72ce369e698.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:21:37,916 - INFO - 127.0.0.1 - - [11/Aug/2024 02:21:37] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:21:37,919 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/b53bdad8-5929-434c-ae88-83ff87ce9d62.pdf
+2024-08-11 02:21:37,920 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:21:37,921 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:21:37,929 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:21:37,938 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:21:37,946 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:21:37,954 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:21:37,962 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:21:37,970 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:21:37,977 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:21:37,984 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:21:37,991 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:21:38,002 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_b53bdad8-5929-434c-ae88-83ff87ce9d62.pdf
+2024-08-11 02:21:38,004 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:21:38,004 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:21:38,008 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:21:38,011 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:21:38,014 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:21:38,016 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:21:38,019 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:21:38,021 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:21:38,024 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:21:38,026 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:21:38,029 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:21:38,031 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_b53bdad8-5929-434c-ae88-83ff87ce9d62.txt
+2024-08-11 02:21:38,032 - INFO - 127.0.0.1 - - [11/Aug/2024 02:21:38] "[32mGET /process_file/b53bdad8-5929-434c-ae88-83ff87ce9d62.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:21:38,034 - INFO - 127.0.0.1 - - [11/Aug/2024 02:21:38] "GET /results?labels_pdf=labels_b53bdad8-5929-434c-ae88-83ff87ce9d62.pdf&text_file=text_b53bdad8-5929-434c-ae88-83ff87ce9d62.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:25:39,082 - INFO - 127.0.0.1 - - [11/Aug/2024 02:25:39] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:25:39,086 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/a4d1b527-3bed-4375-81ad-ba411aed81de.pdf
+2024-08-11 02:25:39,087 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:25:39,088 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:25:39,098 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:25:39,107 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:25:39,115 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:25:39,123 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:25:39,131 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:25:39,139 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:25:39,147 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:25:39,155 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:25:39,162 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:25:39,172 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_a4d1b527-3bed-4375-81ad-ba411aed81de.pdf
+2024-08-11 02:25:39,174 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:25:39,174 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:25:39,179 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:25:39,181 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:25:39,184 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:25:39,186 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:25:39,189 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:25:39,192 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:25:39,194 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:25:39,197 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:25:39,199 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:25:39,201 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_a4d1b527-3bed-4375-81ad-ba411aed81de.txt
+2024-08-11 02:25:39,202 - INFO - 127.0.0.1 - - [11/Aug/2024 02:25:39] "[32mGET /process_file/a4d1b527-3bed-4375-81ad-ba411aed81de.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:25:39,204 - INFO - 127.0.0.1 - - [11/Aug/2024 02:25:39] "GET /results?labels_pdf=labels_a4d1b527-3bed-4375-81ad-ba411aed81de.pdf&text_file=text_a4d1b527-3bed-4375-81ad-ba411aed81de.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:28:15,646 - INFO - 127.0.0.1 - - [11/Aug/2024 02:28:15] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:28:15,649 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/1ea686eb-0448-4885-9447-12cc8a2d7cb1.pdf
+2024-08-11 02:28:15,651 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:28:15,651 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:28:15,662 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:28:15,673 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:28:15,684 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:28:15,695 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:28:15,705 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:28:15,716 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:28:15,758 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:28:15,770 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:28:15,778 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:28:15,790 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_1ea686eb-0448-4885-9447-12cc8a2d7cb1.pdf
+2024-08-11 02:28:15,793 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:28:15,793 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:28:15,798 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:28:15,801 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:28:15,804 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:28:15,806 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:28:15,809 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:28:15,812 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:28:15,814 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:28:15,817 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:28:15,819 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:28:15,822 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_1ea686eb-0448-4885-9447-12cc8a2d7cb1.txt
+2024-08-11 02:28:15,822 - INFO - 127.0.0.1 - - [11/Aug/2024 02:28:15] "[32mGET /process_file/1ea686eb-0448-4885-9447-12cc8a2d7cb1.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:28:15,825 - INFO - 127.0.0.1 - - [11/Aug/2024 02:28:15] "GET /results?labels_pdf=labels_1ea686eb-0448-4885-9447-12cc8a2d7cb1.pdf&text_file=text_1ea686eb-0448-4885-9447-12cc8a2d7cb1.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:31:21,173 - INFO - 127.0.0.1 - - [11/Aug/2024 02:31:21] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:31:21,176 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/e682f4e3-8c1e-4873-98e2-d24e885ae087.pdf
+2024-08-11 02:31:21,178 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:31:21,178 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:31:21,189 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:31:21,198 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:31:21,207 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:31:21,216 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:31:21,225 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:31:21,233 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:31:21,242 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:31:21,250 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:31:21,258 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:31:21,269 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_e682f4e3-8c1e-4873-98e2-d24e885ae087.pdf
+2024-08-11 02:31:21,272 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:31:21,272 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:31:21,276 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:31:21,278 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:31:21,281 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:31:21,283 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:31:21,286 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:31:21,288 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:31:21,291 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:31:21,294 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:31:21,296 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:31:21,299 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_e682f4e3-8c1e-4873-98e2-d24e885ae087.txt
+2024-08-11 02:31:21,299 - INFO - 127.0.0.1 - - [11/Aug/2024 02:31:21] "[32mGET /process_file/e682f4e3-8c1e-4873-98e2-d24e885ae087.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:31:21,302 - INFO - 127.0.0.1 - - [11/Aug/2024 02:31:21] "GET /results?labels_pdf=labels_e682f4e3-8c1e-4873-98e2-d24e885ae087.pdf&text_file=text_e682f4e3-8c1e-4873-98e2-d24e885ae087.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:35:05,760 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-11 02:35:05,903 - INFO -  * Restarting with stat
+2024-08-11 02:35:06,816 - WARNING -  * Debugger is active!
+2024-08-11 02:35:06,827 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:35:51,841 - INFO - 127.0.0.1 - - [11/Aug/2024 02:35:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:35:51,844 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/a6804139-c639-4525-bf09-ade98d02106f.pdf
+2024-08-11 02:35:51,847 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:35:51,848 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:35:51,867 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:35:51,876 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:35:51,885 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:35:51,893 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:35:51,902 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:35:51,910 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:35:51,919 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:35:51,926 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:35:51,934 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:35:51,945 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_a6804139-c639-4525-bf09-ade98d02106f.pdf
+2024-08-11 02:35:51,948 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:35:51,948 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:35:51,952 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:35:51,955 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:35:51,958 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:35:51,960 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:35:51,963 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:35:51,966 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:35:51,968 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:35:51,971 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:35:51,973 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:35:51,976 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_a6804139-c639-4525-bf09-ade98d02106f.txt
+2024-08-11 02:35:51,976 - INFO - 127.0.0.1 - - [11/Aug/2024 02:35:51] "[32mGET /process_file/a6804139-c639-4525-bf09-ade98d02106f.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:35:51,983 - INFO - 127.0.0.1 - - [11/Aug/2024 02:35:51] "GET /results?labels_pdf=labels_a6804139-c639-4525-bf09-ade98d02106f.pdf&text_file=text_a6804139-c639-4525-bf09-ade98d02106f.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:36:31,396 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-11 02:36:31,508 - INFO -  * Restarting with stat
+2024-08-11 02:36:32,073 - WARNING -  * Debugger is active!
+2024-08-11 02:36:32,081 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:36:42,827 - INFO - 127.0.0.1 - - [11/Aug/2024 02:36:42] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-11 02:36:42,830 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/7f0e716a-f83a-4d5b-878f-f0fc4b88d103.pdf
+2024-08-11 02:36:42,834 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:36:42,834 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:36:42,852 - DEBUG - Extracted label 1 from page 1
+2024-08-11 02:36:42,862 - DEBUG - Extracted label 2 from page 1
+2024-08-11 02:36:42,871 - DEBUG - Extracted label 3 from page 1
+2024-08-11 02:36:42,880 - DEBUG - Extracted label 4 from page 1
+2024-08-11 02:36:42,889 - DEBUG - Extracted label 5 from page 1
+2024-08-11 02:36:42,897 - DEBUG - Extracted label 6 from page 1
+2024-08-11 02:36:42,905 - DEBUG - Extracted label 7 from page 1
+2024-08-11 02:36:42,913 - DEBUG - Extracted label 8 from page 1
+2024-08-11 02:36:42,921 - DEBUG - Extracted label 9 from page 1
+2024-08-11 02:36:42,932 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_7f0e716a-f83a-4d5b-878f-f0fc4b88d103.pdf
+2024-08-11 02:36:42,935 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-11 02:36:42,935 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-11 02:36:42,939 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-11 02:36:42,941 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-11 02:36:42,944 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-11 02:36:42,947 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-11 02:36:42,949 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-11 02:36:42,952 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-11 02:36:42,954 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-11 02:36:42,957 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-11 02:36:42,959 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-11 02:36:42,962 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_7f0e716a-f83a-4d5b-878f-f0fc4b88d103.txt
+2024-08-11 02:36:42,963 - INFO - 127.0.0.1 - - [11/Aug/2024 02:36:42] "[32mGET /process_file/7f0e716a-f83a-4d5b-878f-f0fc4b88d103.pdf HTTP/1.1[0m" 302 -
+2024-08-11 02:36:42,968 - INFO - 127.0.0.1 - - [11/Aug/2024 02:36:42] "GET /results?labels_pdf=labels_7f0e716a-f83a-4d5b-878f-f0fc4b88d103.pdf&text_file=text_7f0e716a-f83a-4d5b-878f-f0fc4b88d103.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-11 02:36:51,207 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-11 02:36:51,324 - INFO -  * Restarting with stat
+2024-08-11 02:36:51,878 - WARNING -  * Debugger is active!
+2024-08-11 02:36:51,886 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:36:53,910 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-11 02:36:54,027 - INFO -  * Restarting with stat
+2024-08-11 02:36:54,529 - WARNING -  * Debugger is active!
+2024-08-11 02:36:54,536 - INFO -  * Debugger PIN: 494-748-069
+2024-08-11 02:36:56,560 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app/feedback_app.py', reloading
+2024-08-11 02:36:56,671 - INFO -  * Restarting with stat
+2024-08-13 00:40:00,908 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.13:5001
+2024-08-13 00:40:00,909 - INFO - [33mPress CTRL+C to quit[0m
+2024-08-13 00:40:00,910 - INFO -  * Restarting with stat
+2024-08-13 00:40:01,489 - WARNING -  * Debugger is active!
+2024-08-13 00:40:01,508 - INFO -  * Debugger PIN: 494-748-069
+2024-08-13 00:40:11,037 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:11] "GET / HTTP/1.1" 200 -
+2024-08-13 00:40:11,076 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:11] "GET /static/images/png.avif HTTP/1.1" 200 -
+2024-08-13 00:40:17,195 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:17] "GET /menu/germany HTTP/1.1" 200 -
+2024-08-13 00:40:17,207 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:17] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-13 00:40:29,429 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-08-13 00:40:29,431 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf
+2024-08-13 00:40:29,435 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-13 00:40:29,435 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-13 00:40:29,452 - DEBUG - Extracted label 1 from page 1
+2024-08-13 00:40:29,461 - DEBUG - Extracted label 2 from page 1
+2024-08-13 00:40:29,469 - DEBUG - Extracted label 3 from page 1
+2024-08-13 00:40:29,478 - DEBUG - Extracted label 4 from page 1
+2024-08-13 00:40:29,486 - DEBUG - Extracted label 5 from page 1
+2024-08-13 00:40:29,495 - DEBUG - Extracted label 6 from page 1
+2024-08-13 00:40:29,504 - DEBUG - Extracted label 7 from page 1
+2024-08-13 00:40:29,511 - DEBUG - Extracted label 8 from page 1
+2024-08-13 00:40:29,519 - DEBUG - Extracted label 9 from page 1
+2024-08-13 00:40:29,531 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf
+2024-08-13 00:40:29,534 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-08-13 00:40:29,534 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-08-13 00:40:29,539 - DEBUG - Extracted text from Page 1 Label 1
+2024-08-13 00:40:29,542 - DEBUG - Extracted text from Page 1 Label 2
+2024-08-13 00:40:29,544 - DEBUG - Extracted text from Page 1 Label 3
+2024-08-13 00:40:29,547 - DEBUG - Extracted text from Page 1 Label 4
+2024-08-13 00:40:29,550 - DEBUG - Extracted text from Page 1 Label 5
+2024-08-13 00:40:29,552 - DEBUG - Extracted text from Page 1 Label 6
+2024-08-13 00:40:29,555 - DEBUG - Extracted text from Page 1 Label 7
+2024-08-13 00:40:29,557 - DEBUG - Extracted text from Page 1 Label 8
+2024-08-13 00:40:29,560 - DEBUG - Extracted text from Page 1 Label 9
+2024-08-13 00:40:29,563 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_866d9c5a-946b-40da-a8f9-7b82b703a5e0.txt
+2024-08-13 00:40:29,563 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "[32mGET /process_file/866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf HTTP/1.1[0m" 302 -
+2024-08-13 00:40:29,567 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "GET /results?labels_pdf=labels_866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf&text_file=text_866d9c5a-946b-40da-a8f9-7b82b703a5e0.txt&label_count=9 HTTP/1.1" 200 -
+2024-08-13 00:40:29,578 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-08-13 00:40:32,234 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:32] "GET /download/labels_866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf HTTP/1.1" 200 -

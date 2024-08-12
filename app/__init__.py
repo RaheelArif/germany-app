@@ -15,8 +15,14 @@ def create_app():
             os.makedirs(downloads_dir)
 
         # Import and register the blueprints
+
+
         from .routes import main
         app.register_blueprint(main)
+
+
+        from .germany_app import germany_section
+        app.register_blueprint(germany_section)
         
         from .feedback_app import feedback
         app.register_blueprint(feedback)

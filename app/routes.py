@@ -10,6 +10,7 @@ main = Blueprint('main', __name__)
 def home():
     return render_template('home.html')
 
+
 @main.route('/upload_logo', methods=['POST'])
 def upload_logo():
     if 'logo' not in request.files:
@@ -128,6 +129,52 @@ def process_pdf_file(input_path, downloads_path, filename):
     os.remove(input_path)
 
     return redirect(url_for('main.results', labels_pdf=output_pdf_filename, text_file=output_text_filename, label_count=len(label_pdfs)))
+
+import os
+
+def process_pdf_file_and_return_json(input_path, downloads_path, filename):
+    try:
+
+        margins = (33.41, 82.56, 52.13, 93.24)  # Left, Top, Right, Bottom in points
+        label_size = (255, 133.1)  # Width and height in points
+        rows, cols = 5, 2
+
+        pdf_document = load_pdf(input_path)  # Placeholder function
+        label_pdfs = extract_labels(pdf_document, margins, label_size, rows, cols)  # Placeholder function
+
+        output_pdf_filename = f"pdf_{filename}"
+        output_text_filename = f"text_{filename.replace('.pdf', '.txt')}"
+
+        output_pdf_path = os.path.join(downloads_path, output_pdf_filename)
+        output_text_path = os.path.join(downloads_path, output_text_filename)
+        
+        compile_labels(label_pdfs, output_pdf_path)  # Placeholder function
+
+        extracted_texts = extract_text_from_labels(pdf_document, margins, label_size, rows, cols)  # Placeholder function
+        save_extracted_texts(extracted_texts, output_text_path)  # Placeholder function
+
+        os.remove(input_path)
+
+        response = {
+            "pdf_file": output_pdf_filename,
+            "text_file": output_text_filename,
+        }
+        return response
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return {"error": str(e)}
+    finally:
+        # Ensure the PDF is closed safely
+        if 'pdf_document' in locals() and pdf_document:
+            pdf_document.close()
+        if os.path.exists(input_path):
+            try:
+                os.remove(input_path)
+            except OSError as remove_error:
+                print(f"Error removing file: {remove_error}")
+
+
 
 def process_spreadsheet_file(input_path, downloads_path, filename, file_extension):
     if file_extension == 'xlsx':
