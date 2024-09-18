@@ -776,3 +776,13 @@
 2024-09-18 20:51:47,515 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:47] "GET /static/images/png.avif HTTP/1.1" 200 -
 2024-09-18 20:51:50,556 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:50] "GET /menu/germany HTTP/1.1" 200 -
 2024-09-18 20:51:50,569 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:50] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-09-18 21:04:52,240 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.9:5001
+2024-09-18 21:04:52,240 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 21:04:52,241 - INFO -  * Restarting with stat
+2024-09-18 21:04:52,790 - WARNING -  * Debugger is active!
+2024-09-18 21:04:52,799 - INFO -  * Debugger PIN: 494-748-069
+2024-09-18 21:05:07,006 - INFO - 127.0.0.1 - - [18/Sep/2024 21:05:07] "GET /menu/germany HTTP/1.1" 200 -
+2024-09-18 21:05:07,023 - INFO - 127.0.0.1 - - [18/Sep/2024 21:05:07] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
