@@ -3,11 +3,14 @@
 import os
 from app import create_app
 from flask import jsonify
+from flask_cors import CORS
+
 
 from swagger import add_swagger, swagger_template
 
 app = create_app()
 
+CORS(app)
 
 @app.errorhandler(400)
 def custom_400(error):

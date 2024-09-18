@@ -764,3 +764,15 @@
 2024-08-13 00:40:29,567 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "GET /results?labels_pdf=labels_866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf&text_file=text_866d9c5a-946b-40da-a8f9-7b82b703a5e0.txt&label_count=9 HTTP/1.1" 200 -
 2024-08-13 00:40:29,578 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:29] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
 2024-08-13 00:40:32,234 - INFO - 127.0.0.1 - - [13/Aug/2024 00:40:32] "GET /download/labels_866d9c5a-946b-40da-a8f9-7b82b703a5e0.pdf HTTP/1.1" 200 -
+2024-09-18 20:51:22,038 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.9:5001
+2024-09-18 20:51:22,039 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-18 20:51:22,040 - INFO -  * Restarting with stat
+2024-09-18 20:51:22,612 - WARNING -  * Debugger is active!
+2024-09-18 20:51:22,625 - INFO -  * Debugger PIN: 494-748-069
+2024-09-18 20:51:47,455 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:47] "GET / HTTP/1.1" 200 -
+2024-09-18 20:51:47,515 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:47] "GET /static/images/png.avif HTTP/1.1" 200 -
+2024-09-18 20:51:50,556 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:50] "GET /menu/germany HTTP/1.1" 200 -
+2024-09-18 20:51:50,569 - INFO - 127.0.0.1 - - [18/Sep/2024 20:51:50] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
