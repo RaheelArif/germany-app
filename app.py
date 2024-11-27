@@ -1,17 +1,13 @@
-# app.py
-
 import os
 from app import create_app
 from flask import jsonify
 from flask_cors import CORS
-
-
 from swagger import add_swagger, swagger_template
 
 app = create_app()
-
 CORS(app)
 
+# Error handler for 400 Bad Request
 @app.errorhandler(400)
 def custom_400(error):
     response = jsonify({
@@ -21,7 +17,15 @@ def custom_400(error):
     response.status_code = 400
     return response
 
+# Health check endpoint for Vercel
+@app.route('/')
+def home():
+    return jsonify({
+        "status": "healthy",
+        "message": "API is running"
+    })
 
+# Routes listing endpoint
 @app.route('/routes')
 def list_routes():
     import urllib
@@ -34,20 +38,20 @@ def list_routes():
     
     return "<pre>" + "\n".join(sorted(output)) + "</pre>"
 
-
+# Swagger configuration
 app.secret_key = '1356674150b388010f47dbe1eb04370ddb2402ada0618484'
-
-
 add_swagger(app)
 
 @app.route('/static/swagger.json')
 def swagger_json():
     return jsonify(swagger_template)
 
-
-print("App is running now of port ", int(os.environ.get('PORT', 5001)))
-
+# For local development
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5001)), debug=True)
-
-
+    port = int(os.environ.get('PORT', 5001))
+    print(f"App is running now on port {port}")
+    app.run(
+        host='0.0.0.0', 
+        port=port, 
+        debug=True
+    )
