@@ -1050,3 +1050,117 @@
 2024-11-28 02:15:29,445 - INFO - 127.0.0.1 - - [28/Nov/2024 02:15:29] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
 2024-11-28 02:15:30,551 - INFO - 127.0.0.1 - - [28/Nov/2024 02:15:30] "GET /menu/germany HTTP/1.1" 200 -
 2024-11-28 02:15:30,570 - INFO - 127.0.0.1 - - [28/Nov/2024 02:15:30] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-11-28 02:19:28,577 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/app.py', reloading
+2024-11-28 02:19:28,731 - INFO -  * Restarting with stat
+2024-11-28 02:33:39,281 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.10.7:5001
+2024-11-28 02:33:39,281 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-28 02:33:39,283 - INFO -  * Restarting with stat
+2024-11-28 02:33:39,829 - WARNING -  * Debugger is active!
+2024-11-28 02:33:39,843 - INFO -  * Debugger PIN: 494-748-069
+2024-11-28 02:33:44,689 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:44] "GET /menu/germany HTTP/1.1" 200 -
+2024-11-28 02:33:44,708 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:44] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-11-28 02:33:54,437 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:54] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-11-28 02:33:54,439 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf
+2024-11-28 02:33:54,462 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,463 - DEBUG - Page 2 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,464 - DEBUG - Page 3 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,464 - DEBUG - Page 4 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,464 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,494 - DEBUG - Extracted label 1 from page 1
+2024-11-28 02:33:54,504 - DEBUG - Extracted label 2 from page 1
+2024-11-28 02:33:54,514 - DEBUG - Extracted label 3 from page 1
+2024-11-28 02:33:54,524 - DEBUG - Extracted label 4 from page 1
+2024-11-28 02:33:54,534 - DEBUG - Extracted label 5 from page 1
+2024-11-28 02:33:54,543 - DEBUG - Extracted label 6 from page 1
+2024-11-28 02:33:54,553 - DEBUG - Extracted label 7 from page 1
+2024-11-28 02:33:54,562 - DEBUG - Extracted label 8 from page 1
+2024-11-28 02:33:54,571 - DEBUG - Extracted label 9 from page 1
+2024-11-28 02:33:54,581 - DEBUG - Extracted label 10 from page 1
+2024-11-28 02:33:54,581 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,590 - DEBUG - Extracted label 1 from page 2
+2024-11-28 02:33:54,599 - DEBUG - Extracted label 2 from page 2
+2024-11-28 02:33:54,608 - DEBUG - Extracted label 3 from page 2
+2024-11-28 02:33:54,617 - DEBUG - Extracted label 4 from page 2
+2024-11-28 02:33:54,625 - DEBUG - Extracted label 5 from page 2
+2024-11-28 02:33:54,634 - DEBUG - Extracted label 6 from page 2
+2024-11-28 02:33:54,643 - DEBUG - Extracted label 7 from page 2
+2024-11-28 02:33:54,651 - DEBUG - Extracted label 8 from page 2
+2024-11-28 02:33:54,659 - DEBUG - Extracted label 9 from page 2
+2024-11-28 02:33:54,668 - DEBUG - Extracted label 10 from page 2
+2024-11-28 02:33:54,668 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,677 - DEBUG - Extracted label 1 from page 3
+2024-11-28 02:33:54,686 - DEBUG - Extracted label 2 from page 3
+2024-11-28 02:33:54,694 - DEBUG - Extracted label 3 from page 3
+2024-11-28 02:33:54,703 - DEBUG - Extracted label 4 from page 3
+2024-11-28 02:33:54,711 - DEBUG - Extracted label 5 from page 3
+2024-11-28 02:33:54,721 - DEBUG - Extracted label 6 from page 3
+2024-11-28 02:33:54,730 - DEBUG - Extracted label 7 from page 3
+2024-11-28 02:33:54,739 - DEBUG - Extracted label 8 from page 3
+2024-11-28 02:33:54,748 - DEBUG - Extracted label 9 from page 3
+2024-11-28 02:33:54,756 - DEBUG - Extracted label 10 from page 3
+2024-11-28 02:33:54,756 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,764 - DEBUG - Extracted label 1 from page 4
+2024-11-28 02:33:54,773 - DEBUG - Extracted label 2 from page 4
+2024-11-28 02:33:54,781 - DEBUG - Extracted label 3 from page 4
+2024-11-28 02:33:54,789 - DEBUG - Extracted label 4 from page 4
+2024-11-28 02:33:54,798 - DEBUG - Extracted label 5 from page 4
+2024-11-28 02:33:54,806 - DEBUG - Extracted label 6 from page 4
+2024-11-28 02:33:54,814 - DEBUG - Extracted label 7 from page 4
+2024-11-28 02:33:54,823 - DEBUG - Extracted label 8 from page 4
+2024-11-28 02:33:54,831 - DEBUG - Extracted label 9 from page 4
+2024-11-28 02:33:54,855 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf
+2024-11-28 02:33:54,874 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,874 - DEBUG - Page 2 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,874 - DEBUG - Page 3 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,875 - DEBUG - Page 4 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 02:33:54,875 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,880 - DEBUG - Extracted text from Page 1 Label 1
+2024-11-28 02:33:54,883 - DEBUG - Extracted text from Page 1 Label 2
+2024-11-28 02:33:54,886 - DEBUG - Extracted text from Page 1 Label 3
+2024-11-28 02:33:54,889 - DEBUG - Extracted text from Page 1 Label 4
+2024-11-28 02:33:54,892 - DEBUG - Extracted text from Page 1 Label 5
+2024-11-28 02:33:54,894 - DEBUG - Extracted text from Page 1 Label 6
+2024-11-28 02:33:54,897 - DEBUG - Extracted text from Page 1 Label 7
+2024-11-28 02:33:54,900 - DEBUG - Extracted text from Page 1 Label 8
+2024-11-28 02:33:54,903 - DEBUG - Extracted text from Page 1 Label 9
+2024-11-28 02:33:54,906 - DEBUG - Extracted text from Page 1 Label 10
+2024-11-28 02:33:54,906 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,908 - DEBUG - Extracted text from Page 2 Label 1
+2024-11-28 02:33:54,911 - DEBUG - Extracted text from Page 2 Label 2
+2024-11-28 02:33:54,914 - DEBUG - Extracted text from Page 2 Label 3
+2024-11-28 02:33:54,917 - DEBUG - Extracted text from Page 2 Label 4
+2024-11-28 02:33:54,920 - DEBUG - Extracted text from Page 2 Label 5
+2024-11-28 02:33:54,922 - DEBUG - Extracted text from Page 2 Label 6
+2024-11-28 02:33:54,925 - DEBUG - Extracted text from Page 2 Label 7
+2024-11-28 02:33:54,928 - DEBUG - Extracted text from Page 2 Label 8
+2024-11-28 02:33:54,931 - DEBUG - Extracted text from Page 2 Label 9
+2024-11-28 02:33:54,933 - DEBUG - Extracted text from Page 2 Label 10
+2024-11-28 02:33:54,933 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,937 - DEBUG - Extracted text from Page 3 Label 1
+2024-11-28 02:33:54,939 - DEBUG - Extracted text from Page 3 Label 2
+2024-11-28 02:33:54,942 - DEBUG - Extracted text from Page 3 Label 3
+2024-11-28 02:33:54,945 - DEBUG - Extracted text from Page 3 Label 4
+2024-11-28 02:33:54,948 - DEBUG - Extracted text from Page 3 Label 5
+2024-11-28 02:33:54,951 - DEBUG - Extracted text from Page 3 Label 6
+2024-11-28 02:33:54,954 - DEBUG - Extracted text from Page 3 Label 7
+2024-11-28 02:33:54,957 - DEBUG - Extracted text from Page 3 Label 8
+2024-11-28 02:33:54,960 - DEBUG - Extracted text from Page 3 Label 9
+2024-11-28 02:33:54,963 - DEBUG - Extracted text from Page 3 Label 10
+2024-11-28 02:33:54,963 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 02:33:54,966 - DEBUG - Extracted text from Page 4 Label 1
+2024-11-28 02:33:54,969 - DEBUG - Extracted text from Page 4 Label 2
+2024-11-28 02:33:54,971 - DEBUG - Extracted text from Page 4 Label 3
+2024-11-28 02:33:54,974 - DEBUG - Extracted text from Page 4 Label 4
+2024-11-28 02:33:54,977 - DEBUG - Extracted text from Page 4 Label 5
+2024-11-28 02:33:54,980 - DEBUG - Extracted text from Page 4 Label 6
+2024-11-28 02:33:54,982 - DEBUG - Extracted text from Page 4 Label 7
+2024-11-28 02:33:54,985 - DEBUG - Extracted text from Page 4 Label 8
+2024-11-28 02:33:54,988 - DEBUG - Extracted text from Page 4 Label 9
+2024-11-28 02:33:54,991 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.txt
+2024-11-28 02:33:54,991 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:54] "[32mGET /process_file/64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf HTTP/1.1[0m" 302 -
+2024-11-28 02:33:54,996 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:54] "GET /results?labels_pdf=labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf&text_file=text_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.txt&label_count=39 HTTP/1.1" 200 -
+2024-11-28 02:33:55,014 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:55] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-11-28 02:33:55,977 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:55] "GET /download/labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf HTTP/1.1" 200 -

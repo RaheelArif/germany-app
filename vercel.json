@@ -2,17 +2,17 @@
     "version": 2,
     "builds": [
       {
-        "src": "app.py",
-        "use": "@vercel/python",
-        "config": { 
-          "maxLambdaSize": "15mb"
-        }
+        "src": "index.py",
+        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/api/germany_section/(.*)",
-        "dest": "app.py"
+        "src": "/(.*)",
+        "dest": "index.py"
       }
-    ]
+    ],
+    "env": {
+      "PYTHON_VERSION": "3.12.5"
+    }
   }

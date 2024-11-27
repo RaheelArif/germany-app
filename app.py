@@ -3,9 +3,15 @@ from app import create_app
 from flask import jsonify
 from flask_cors import CORS
 from swagger import add_swagger, swagger_template
+from app.germany_app import germany_section as germany_blueprint
+from app.routes import main as main_blueprint
 
 app = create_app()
 CORS(app)
+
+# Register both blueprints
+app.register_blueprint(main_blueprint, name='main_routes')  # Give unique name
+app.register_blueprint(germany_blueprint, name='germany_routes')
 
 # Error handler for 400 Bad Request
 @app.errorhandler(400)
