@@ -2,23 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "./index.py",
-      "use": "@vercel/python"
+      "src": "index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb"
+      }
     }
   ],
   "routes": [
     {
       "src": "/api/germany_section/pdf_upload",
-      "methods": ["POST", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Date, X-Api-Version"
-      }
+      "dest": "index.py",
+      "methods": ["POST", "OPTIONS"]
+    },
+    {
+      "src": "/api/germany_section/(.*)",
+      "dest": "index.py",
+      "methods": ["GET", "POST", "OPTIONS"]
     },
     {
       "src": "/(.*)",
-      "dest": "./index.py"
+      "dest": "index.py"
     }
-  ]
+  ],
+  "env": {
+    "PYTHON_VERSION": "3.12.5"
+  }
 }

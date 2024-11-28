@@ -1,4 +1,4 @@
-from app import app as application
+from app import app
 
-# For Vercel serverless function
-app = application
+# For Vercel
+application = app

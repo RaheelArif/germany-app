@@ -1,25 +1,37 @@
 import os
 from app import create_app
-from flask import jsonify
-from flask_cors import CORS
+from flask import jsonify, request
+from flask_cors import CORS, cross_origin
 from swagger import add_swagger, swagger_template
 from app.germany_app import germany_section as germany_blueprint
 from app.routes import main as main_blueprint
 
 app = create_app()
+
+# Configure CORS
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:3000", "https://germany-app.vercel.app"],
+        "origins": [
+            "http://localhost:3000",
+            "https://germany-app.vercel.app",
+            "https://germany-app-git-main-raheelarifs-projects.vercel.app"
+        ],
         "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
+        "allow_headers": [
+            "Content-Type",
+            "Authorization",
+            "X-Requested-With",
+            "Accept",
+            "Origin"
+        ]
     }
 })
 
-# Register both blueprints
-app.register_blueprint(main_blueprint, name='main_routes')  # Give unique name
+# Register blueprints with unique names
+app.register_blueprint(main_blueprint, name='main_routes')
 app.register_blueprint(germany_blueprint, name='germany_routes')
 
-# Error handler for 400 Bad Request
+# Error handlers
 @app.errorhandler(400)
 def custom_400(error):
     response = jsonify({
@@ -29,8 +41,18 @@ def custom_400(error):
     response.status_code = 400
     return response
 
+@app.errorhandler(500)
+def custom_500(error):
+    response = jsonify({
+        "error": "Internal Server Error",
+        "message": str(error)
+    })
+    response.status_code = 500
+    return response
+
 # Health check endpoint for Vercel
 @app.route('/')
+@cross_origin()
 def home():
     return jsonify({
         "status": "healthy",
@@ -58,7 +80,7 @@ add_swagger(app)
 def swagger_json():
     return jsonify(swagger_template)
 
-# For local development
+# For local development 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     print(f"App is running now on port {port}")
