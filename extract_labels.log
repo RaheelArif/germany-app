@@ -1168,3 +1168,107 @@
 2024-11-28 14:34:39,472 - INFO -  * Restarting with stat
 2024-11-28 14:34:40,886 - WARNING -  * Debugger is active!
 2024-11-28 14:34:40,897 - INFO -  * Debugger PIN: 494-748-069
+2024-11-28 14:39:37,613 - INFO - 127.0.0.1 - - [28/Nov/2024 14:39:37] "GET /results?labels_pdf=labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf&text_file=text_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.txt&label_count=39 HTTP/1.1" 200 -
+2024-11-28 14:39:37,637 - INFO - 127.0.0.1 - - [28/Nov/2024 14:39:37] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
+2024-11-28 14:40:09,176 - INFO - Loading PDF /Users/raheelarif/Desktop/projects/rivanoo-managment/app/uploads/4377b4c8-60f6-404d-8432-cf2c583101b8.pdf
+2024-11-28 14:40:09,190 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,191 - DEBUG - Page 2 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,191 - DEBUG - Page 3 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,192 - DEBUG - Page 4 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,192 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,217 - DEBUG - Extracted label 1 from page 1
+2024-11-28 14:40:09,227 - DEBUG - Extracted label 2 from page 1
+2024-11-28 14:40:09,238 - DEBUG - Extracted label 3 from page 1
+2024-11-28 14:40:09,248 - DEBUG - Extracted label 4 from page 1
+2024-11-28 14:40:09,258 - DEBUG - Extracted label 5 from page 1
+2024-11-28 14:40:09,268 - DEBUG - Extracted label 6 from page 1
+2024-11-28 14:40:09,277 - DEBUG - Extracted label 7 from page 1
+2024-11-28 14:40:09,287 - DEBUG - Extracted label 8 from page 1
+2024-11-28 14:40:09,296 - DEBUG - Extracted label 9 from page 1
+2024-11-28 14:40:09,306 - DEBUG - Extracted label 10 from page 1
+2024-11-28 14:40:09,306 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,315 - DEBUG - Extracted label 1 from page 2
+2024-11-28 14:40:09,324 - DEBUG - Extracted label 2 from page 2
+2024-11-28 14:40:09,334 - DEBUG - Extracted label 3 from page 2
+2024-11-28 14:40:09,342 - DEBUG - Extracted label 4 from page 2
+2024-11-28 14:40:09,351 - DEBUG - Extracted label 5 from page 2
+2024-11-28 14:40:09,360 - DEBUG - Extracted label 6 from page 2
+2024-11-28 14:40:09,369 - DEBUG - Extracted label 7 from page 2
+2024-11-28 14:40:09,377 - DEBUG - Extracted label 8 from page 2
+2024-11-28 14:40:09,386 - DEBUG - Extracted label 9 from page 2
+2024-11-28 14:40:09,395 - DEBUG - Extracted label 10 from page 2
+2024-11-28 14:40:09,396 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,405 - DEBUG - Extracted label 1 from page 3
+2024-11-28 14:40:09,413 - DEBUG - Extracted label 2 from page 3
+2024-11-28 14:40:09,422 - DEBUG - Extracted label 3 from page 3
+2024-11-28 14:40:09,431 - DEBUG - Extracted label 4 from page 3
+2024-11-28 14:40:09,439 - DEBUG - Extracted label 5 from page 3
+2024-11-28 14:40:09,449 - DEBUG - Extracted label 6 from page 3
+2024-11-28 14:40:09,457 - DEBUG - Extracted label 7 from page 3
+2024-11-28 14:40:09,466 - DEBUG - Extracted label 8 from page 3
+2024-11-28 14:40:09,475 - DEBUG - Extracted label 9 from page 3
+2024-11-28 14:40:09,484 - DEBUG - Extracted label 10 from page 3
+2024-11-28 14:40:09,484 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,492 - DEBUG - Extracted label 1 from page 4
+2024-11-28 14:40:09,501 - DEBUG - Extracted label 2 from page 4
+2024-11-28 14:40:09,509 - DEBUG - Extracted label 3 from page 4
+2024-11-28 14:40:09,518 - DEBUG - Extracted label 4 from page 4
+2024-11-28 14:40:09,526 - DEBUG - Extracted label 5 from page 4
+2024-11-28 14:40:09,534 - DEBUG - Extracted label 6 from page 4
+2024-11-28 14:40:09,542 - DEBUG - Extracted label 7 from page 4
+2024-11-28 14:40:09,550 - DEBUG - Extracted label 8 from page 4
+2024-11-28 14:40:09,558 - DEBUG - Extracted label 9 from page 4
+2024-11-28 14:40:09,582 - INFO - Saving PDF to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/pdf_4377b4c8-60f6-404d-8432-cf2c583101b8.pdf
+2024-11-28 14:40:09,596 - DEBUG - Page 1 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,597 - DEBUG - Page 2 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,597 - DEBUG - Page 3 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,598 - DEBUG - Page 4 cropped with margins (33.41, 82.56, 52.13, 93.24)
+2024-11-28 14:40:09,598 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,603 - DEBUG - Extracted text from Page 1 Label 1
+2024-11-28 14:40:09,605 - DEBUG - Extracted text from Page 1 Label 2
+2024-11-28 14:40:09,608 - DEBUG - Extracted text from Page 1 Label 3
+2024-11-28 14:40:09,612 - DEBUG - Extracted text from Page 1 Label 4
+2024-11-28 14:40:09,615 - DEBUG - Extracted text from Page 1 Label 5
+2024-11-28 14:40:09,617 - DEBUG - Extracted text from Page 1 Label 6
+2024-11-28 14:40:09,620 - DEBUG - Extracted text from Page 1 Label 7
+2024-11-28 14:40:09,623 - DEBUG - Extracted text from Page 1 Label 8
+2024-11-28 14:40:09,626 - DEBUG - Extracted text from Page 1 Label 9
+2024-11-28 14:40:09,629 - DEBUG - Extracted text from Page 1 Label 10
+2024-11-28 14:40:09,629 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,632 - DEBUG - Extracted text from Page 2 Label 1
+2024-11-28 14:40:09,634 - DEBUG - Extracted text from Page 2 Label 2
+2024-11-28 14:40:09,637 - DEBUG - Extracted text from Page 2 Label 3
+2024-11-28 14:40:09,640 - DEBUG - Extracted text from Page 2 Label 4
+2024-11-28 14:40:09,643 - DEBUG - Extracted text from Page 2 Label 5
+2024-11-28 14:40:09,646 - DEBUG - Extracted text from Page 2 Label 6
+2024-11-28 14:40:09,648 - DEBUG - Extracted text from Page 2 Label 7
+2024-11-28 14:40:09,651 - DEBUG - Extracted text from Page 2 Label 8
+2024-11-28 14:40:09,654 - DEBUG - Extracted text from Page 2 Label 9
+2024-11-28 14:40:09,657 - DEBUG - Extracted text from Page 2 Label 10
+2024-11-28 14:40:09,657 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,660 - DEBUG - Extracted text from Page 3 Label 1
+2024-11-28 14:40:09,663 - DEBUG - Extracted text from Page 3 Label 2
+2024-11-28 14:40:09,666 - DEBUG - Extracted text from Page 3 Label 3
+2024-11-28 14:40:09,669 - DEBUG - Extracted text from Page 3 Label 4
+2024-11-28 14:40:09,672 - DEBUG - Extracted text from Page 3 Label 5
+2024-11-28 14:40:09,675 - DEBUG - Extracted text from Page 3 Label 6
+2024-11-28 14:40:09,678 - DEBUG - Extracted text from Page 3 Label 7
+2024-11-28 14:40:09,681 - DEBUG - Extracted text from Page 3 Label 8
+2024-11-28 14:40:09,684 - DEBUG - Extracted text from Page 3 Label 9
+2024-11-28 14:40:09,687 - DEBUG - Extracted text from Page 3 Label 10
+2024-11-28 14:40:09,687 - DEBUG - Label coordinates defined with size (255, 133.1) for 5 rows and 2 columns
+2024-11-28 14:40:09,690 - DEBUG - Extracted text from Page 4 Label 1
+2024-11-28 14:40:09,693 - DEBUG - Extracted text from Page 4 Label 2
+2024-11-28 14:40:09,696 - DEBUG - Extracted text from Page 4 Label 3
+2024-11-28 14:40:09,699 - DEBUG - Extracted text from Page 4 Label 4
+2024-11-28 14:40:09,702 - DEBUG - Extracted text from Page 4 Label 5
+2024-11-28 14:40:09,705 - DEBUG - Extracted text from Page 4 Label 6
+2024-11-28 14:40:09,708 - DEBUG - Extracted text from Page 4 Label 7
+2024-11-28 14:40:09,710 - DEBUG - Extracted text from Page 4 Label 8
+2024-11-28 14:40:09,713 - DEBUG - Extracted text from Page 4 Label 9
+2024-11-28 14:40:09,717 - INFO - Extracted texts saved to /Users/raheelarif/Desktop/projects/rivanoo-managment/app/downloads/text_4377b4c8-60f6-404d-8432-cf2c583101b8.txt
+2024-11-28 14:40:09,718 - INFO - 127.0.0.1 - - [28/Nov/2024 14:40:09] "POST /api/germany_section/pdf_upload HTTP/1.1" 200 -
+2024-11-28 14:42:05,534 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/index.py', reloading
+2024-11-28 14:42:05,717 - INFO -  * Restarting with stat
+2024-11-28 14:42:06,884 - WARNING -  * Debugger is active!
+2024-11-28 14:42:06,894 - INFO -  * Debugger PIN: 494-748-069

@@ -5,27 +5,26 @@
         "src": "index.py",
         "use": "@vercel/python",
         "config": {
-          "maxLambdaSize": "15mb"
+          "maxLambdaSize": "15mb",
+          "runtime": "python3.12"
         }
       }
     ],
     "routes": [
       {
         "src": "/api/germany_section/(.*)",
+        "dest": "index.py",
         "methods": ["GET", "POST", "OPTIONS"],
         "headers": {
           "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
           "Access-Control-Allow-Headers": "Content-Type, Authorization",
-          "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
-        },
-        "dest": "index.py"
+          "Cache-Control": "public, max-age=0, must-revalidate"
+        }
       },
       {
         "src": "/(.*)",
         "dest": "index.py"
       }
-    ],
-    "env": {
-      "PYTHON_VERSION": "3.12.5"
-    }
+    ]
   }
