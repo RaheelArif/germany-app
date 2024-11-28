@@ -1164,3 +1164,7 @@
 2024-11-28 02:33:54,996 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:54] "GET /results?labels_pdf=labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf&text_file=text_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.txt&label_count=39 HTTP/1.1" 200 -
 2024-11-28 02:33:55,014 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:55] "[36mGET /static/images/png.avif HTTP/1.1[0m" 304 -
 2024-11-28 02:33:55,977 - INFO - 127.0.0.1 - - [28/Nov/2024 02:33:55] "GET /download/labels_64feda6b-6947-4d47-87f6-e9f5a9ee29d9.pdf HTTP/1.1" 200 -
+2024-11-28 14:34:39,087 - INFO -  * Detected change in '/Users/raheelarif/Desktop/projects/rivanoo-managment/index.py', reloading
+2024-11-28 14:34:39,472 - INFO -  * Restarting with stat
+2024-11-28 14:34:40,886 - WARNING -  * Debugger is active!
+2024-11-28 14:34:40,897 - INFO -  * Debugger PIN: 494-748-069

@@ -3,10 +3,23 @@
     "builds": [
       {
         "src": "index.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "15mb"
+        }
       }
     ],
     "routes": [
+      {
+        "src": "/api/germany_section/(.*)",
+        "methods": ["GET", "POST", "OPTIONS"],
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+          "Access-Control-Allow-Methods": "GET,POST,OPTIONS"
+        },
+        "dest": "index.py"
+      },
       {
         "src": "/(.*)",
         "dest": "index.py"
