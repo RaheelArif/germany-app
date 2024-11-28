@@ -16,6 +16,7 @@ def home():
 
 
 @germany_section.route('/api/germany_section/pdf_upload',methods=['POST'])
+
 def pdf_upload():
 
     if 'file' not in request.files:

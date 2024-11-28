@@ -1,4 +1,4 @@
-from app import app
+from app import app as application
 
-# This tells Vercel to use this as the serverless function handler
-handler = app
+# For Vercel serverless function
+app = application

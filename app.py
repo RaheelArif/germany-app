@@ -7,7 +7,13 @@ from app.germany_app import germany_section as germany_blueprint
 from app.routes import main as main_blueprint
 
 app = create_app()
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": ["http://localhost:3000", "https://germany-app.vercel.app"],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"]
+    }
+})
 
 # Register both blueprints
 app.register_blueprint(main_blueprint, name='main_routes')  # Give unique name
